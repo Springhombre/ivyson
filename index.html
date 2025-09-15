@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ivyson.bm - Upload Your Music</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ivyson.bm</h1>
+      <p>Upload and share your music with the world</p>
+    </header>
+
+    <section class="upload-section">
+      <div id="drop-area">
+        <form class="upload-form">
+          <p>Drag & drop your music file here or click to select</p>
+          <input type="file" id="fileElem" accept="audio/*" onchange="handleFiles(this.files)">
+          <label for="fileElem">Browse Files</label>
+        </form>
+        <div id="preview"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Ivyson.bm. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
